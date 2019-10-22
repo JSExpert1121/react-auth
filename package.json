@@ -1,0 +1,99 @@
+{
+  "name": "web-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.9",
+    "@material-ui/core": "^4.4.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/pickers": "^3.2.4",
+    "@types/jest": "24.0.17",
+    "@types/lodash": "^4.14.136",
+    "@types/node": "12.7.1",
+    "@types/react": "16.8.25",
+    "@types/react-dom": "16.8.5",
+    "@types/react-helmet": "^5.0.9",
+    "@types/react-intl": "^3.0.0",
+    "@types/react-redux": "^7.1.1",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/webfontloader": "^1.6.29",
+    "axios": "^0.19.0",
+    "classnames": "^2.2.6",
+    "client-oauth2": "^4.2.5",
+    "clsx": "^1.0.4",
+    "date-fns": "^2.0.1",
+    "device-uuid": "^1.0.4",
+    "material-ui-dropzone": "^2.4.0",
+    "material-ui-phone-number": "^2.0.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-image-crop": "^8.2.2",
+    "react-intl": "^3.1.5",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-test-renderer": "^16.8.6",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "typescript": "3.5.3",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --testResultsProcessor ./node_modules/jest-bamboo-reporter",
+    "testSonar": "react-scripts test --testResultsProcessor ./node_modules/jest-sonar-reporter",
+    "eject": "react-scripts eject",
+    "jest": "react-scripts test --coverage --watchAll"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/*.{js,jsx,ts,tsx}",
+      "!src/service/base.ts",
+      "!<rootDir>/node_modules/",
+      "!src/store/config.ts"
+    ],
+    "coverageReporters": [
+      "lcov"
+    ]
+  },
+  "jestSonar": {
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/jsdom": "^12.2.4",
+    "canvas": "^2.6.0",
+    "css-mediaquery": "^0.1.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-react-intl": "^2.0.5",
+    "jest-bamboo-reporter": "^1.2.1",
+    "jest-canvas-mock": "^2.1.1",
+    "jest-mock-axios": "^3.1.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "jsdom": "^15.1.1",
+    "redux-mock-store": "^1.5.3"
+  }
+}

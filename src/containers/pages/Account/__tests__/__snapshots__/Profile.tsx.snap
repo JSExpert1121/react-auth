@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`containers/pages/Account/Profile Snapshot test 1`] = `ShallowWrapper {}`;
